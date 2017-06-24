@@ -1,9 +1,13 @@
+/**
+ * @description
+ * webpack config
+ */
 module.exports = {
   entry: [
     './src/index.js'
   ],
   output: {
-    path: __dirname,
+    path: './build',
     publicPath: '/',
     filename: 'bundle.js'
   },

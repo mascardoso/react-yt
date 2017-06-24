@@ -1,13 +1,12 @@
 {
-  "name": "redux-simple-starter",
+  "name": "react-yt",
   "version": "1.0.0",
-  "description": "Simple starter package for Redux with React and Babel support",
+  "description": "Plain ReactJS Youtube API Playlist",
   "main": "index.js",
-  "repository": "git@github.com:StephenGrider/ReduxSimpleStarter.git",
+  "repository": "https://github.com/mascardoso/react-yt",
   "scripts": {
     "start": "node ./node_modules/webpack-dev-server/bin/webpack-dev-server.js",
-    "test": "mocha --compilers js:babel-core/register --require ./test/test_helper.js --recursive ./test",
-    "test:watch": "npm run test -- --watch"
+    "build": "rm -rf ./build && webpack -p && cp index.html ./build && mkdir ./build/style && cp style/style.css ./build/style"
   },
   "author": "",
   "license": "ISC",
@@ -16,11 +15,7 @@
     "babel-loader": "^6.2.0",
     "babel-preset-es2015": "^6.1.18",
     "babel-preset-react": "^6.1.18",
-    "chai": "^3.5.0",
-    "chai-jquery": "^2.0.0",
-    "jquery": "^2.2.1",
     "jsdom": "^8.1.0",
-    "mocha": "^2.4.5",
     "react-addons-test-utils": "^0.14.7",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
@@ -30,9 +25,6 @@
     "lodash": "^3.10.1",
     "react": "^0.14.3",
     "react-dom": "^0.14.3",
-    "react-redux": "4.3.0",
-    "react-router": "^2.0.1",
-    "redux": "^3.0.4",
     "youtube-api-search": "0.0.5"
   }
 }
